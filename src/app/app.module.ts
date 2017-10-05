@@ -18,6 +18,7 @@ import { MapsComponent } from './maps/maps.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
 import { SalesComponent } from './sales/sales.component';
+import { PurchaseOrderComponent } from './purchase-order/purchase-order.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { SalesComponent } from './sales/sales.component';
     NotificationsComponent,
     UpgradeComponent,
     SalesComponent,
+    PurchaseOrderComponent,
 
   ],
   imports: [

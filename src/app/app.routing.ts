@@ -12,10 +12,12 @@ import { MapsComponent } from './maps/maps.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
 import { SalesComponent } from 'app/sales/sales.component';
+import { PurchaseOrderComponent } from 'app/purchase-order/purchase-order.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'sales', component: SalesComponent },
+  { path: 'purchase-order', component: PurchaseOrderComponent },
   { path: 'user-profile', component: UserProfileComponent },
   { path: 'table-list', component: TableListComponent },
   { path: 'typography', component: TypographyComponent },
