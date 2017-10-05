@@ -8,14 +8,15 @@ declare interface RouteInfo {
     class: string;
 }
 export const ROUTES: RouteInfo[] = [
-    { path: 'dashboard', title: 'รายงาน',  icon: 'assessment', class: '' },
-    { path: 'user-profile', title: 'รายการขาย',  icon: 'unarchive', class: '' },
-    { path: 'table-list', title: 'รายการซื้อ',  icon: 'move_to_inbox', class: '' },
-    { path: 'typography', title: 'สินค้า',  icon: 'inbox', class: '' },
-    { path: 'icons', title: 'ลูกค้า / คู่ค้า',  icon: 'assignment_ind', class: '' },
-    { path: 'maps', title: 'การเงิน',  icon: 'account_balance_wallet', class: '' },
-    { path: 'notifications', title: 'ตั้งค่า',  icon: 'settings', class: '' },
-    { path: 'upgrade', title: 'แพ็คเกจ',  icon: 'dashboard', class: '' },
+    { path: 'dashboard', title: 'ภาพราม',  icon: '', class: '' },
+    { path: 'sales', title: 'ยอดขาย',  icon: '', class: '' },
+    
+    // { path: 'user-profile', title: 'รายการขาย',  icon: 'unarchive', class: '' },
+    // { path: 'typography', title: 'สินค้า',  icon: 'inbox', class: '' },
+    // { path: 'icons', title: 'ลูกค้า / คู่ค้า',  icon: 'assignment_ind', class: '' },
+    // { path: 'maps', title: 'การเงิน',  icon: 'account_balance_wallet', class: '' },
+    // { path: 'notifications', title: 'ตั้งค่า',  icon: 'settings', class: '' },
+    // { path: 'upgrade', title: 'แพ็คเกจ',  icon: 'dashboard', class: '' },
     //backup
     // { path: 'dashboard', title: 'Dashboard',  icon: 'dashboard', class: '' },
     // { path: 'user-profile', title: 'User Profile',  icon:'person', class: '' },

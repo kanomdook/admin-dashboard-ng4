@@ -2,13 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import * as Chartist from 'chartist';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  selector: 'app-sales',
+  templateUrl: './sales.component.html',
+  styleUrls: ['./sales.component.css']
 })
-export class DashboardComponent implements OnInit {
+export class SalesComponent implements OnInit {
 
   constructor() { }
+
   startAnimationForLineChart(chart) {
     let seq: any, delays: any, durations: any;
     seq = 0;
@@ -92,9 +93,9 @@ export class DashboardComponent implements OnInit {
     /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
 
     const dataCompletedTasksChart: any = {
-      labels: ['12am', '3pm', '6pm', '9pm', '12pm', '3am', '6am', '9am'],
+      labels: ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.'],
       series: [
-        [230, 750, 450, 300, 280, 240, 200, 190]
+        [12, 17, 7, 17, 23, 18, 38]
       ]
     };
 
@@ -103,7 +104,7 @@ export class DashboardComponent implements OnInit {
         tension: 0
       }),
       low: 0,
-      high: 1000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+      high: 100, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
       chartPadding: { top: 0, right: 0, bottom: 0, left: 0 }
     }
 
