@@ -141,10 +141,10 @@ export class DashboardComponent implements OnInit {
           }
         }]
       ];
-      var emailsSubscriptionChart = new Chartist.Bar('#emailsSubscriptionChart', dataEmailsSubscriptionChart, optionsEmailsSubscriptionChart, responsiveOptions);
+      // var emailsSubscriptionChart = new Chartist.Bar('#emailsSubscriptionChart', dataEmailsSubscriptionChart, optionsEmailsSubscriptionChart, responsiveOptions);
 
       //start animation for the Emails Subscription Chart
-      this.startAnimationForBarChart(emailsSubscriptionChart);
+      // this.startAnimationForBarChart(emailsSubscriptionChart);
   }
 
 }
