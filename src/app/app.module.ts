@@ -19,6 +19,7 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { UpgradeComponent } from './upgrade/upgrade.component';
 import { SalesComponent } from './sales/sales.component';
 import { PurchaseOrderComponent } from './purchase-order/purchase-order.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { PurchaseOrderComponent } from './purchase-order/purchase-order.componen
     UpgradeComponent,
     SalesComponent,
     PurchaseOrderComponent,
+    ProductComponent,
 
   ],
   imports: [
