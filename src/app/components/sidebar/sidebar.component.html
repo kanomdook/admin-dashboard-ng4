@@ -1,7 +1,7 @@
 <div class="logo">
     <a href="https://www.creative-tim.com" class="simple-text">
         <div class="logo-img">
-            <img src="/assets/img/angular2-logo-red.png"/>
+            <img src="/assets/img/angular2-logo-red.png" />
         </div>
         เมนูหลัก
     </a>
@@ -48,12 +48,262 @@
 
     <div class="nav-container">
         <ul class="nav">
-            <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}}">
+            <!-- <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}}">
                 <a  [routerLink]="[menuItem.path]">
                     <i class="material-icons">{{menuItem.icon}}</i>
                     <p>{{menuItem.title}}</p>
                 </a>
+            </li> -->
+
+            <li>
+                <a data-toggle="collapse" href="#report" class="collapsed" aria-expanded="false">
+                    <i class="material-icons">assessment</i>
+                    <p>รายงาน <b class="caret"></b></p>
+                </a>
+                <div class="collapse" id="report" aria-expanded="false" style="height: 0px;">
+                    <ul class="nav">
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">ภาพราม</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">ยอดขาย</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">ยอดซื้อ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">สินค้า</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">ลูกค้า</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">จัดการไฟล์</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">จัดการเอกสาร</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </li>
+
+            <li>
+                <a data-toggle="collapse" href="#sell" class="collapsed" aria-expanded="false">
+                    <i class="material-icons">unarchive</i>
+                    <p>รายการขาย <b class="caret"></b></p>
+                </a>
+                <div class="collapse" id="sell" aria-expanded="false" style="height: 0px;">
+                    <ul class="nav">
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">สร้างรายการขาย</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">ดูรายการขาย</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">บริการส่งสินค้า</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <a data-toggle="collapse" href="#buy" class="collapsed" aria-expanded="false">
+                    <i class="material-icons">move_to_inbox</i>
+                    <p>รายการซื้อ <b class="caret"></b></p>
+                </a>
+                <div class="collapse" id="buy" aria-expanded="false" style="height: 0px;">
+                    <ul class="nav">
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">สร้างรายการซื้อ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">ดูรายการซื้อ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <a data-toggle="collapse" href="#product" class="collapsed" aria-expanded="false">
+                    <i class="material-icons">inbox</i>
+                    <p>สินค้า <b class="caret"></b></p>
+                </a>
+                <div class="collapse" id="product" aria-expanded="false" style="height: 0px;">
+                    <ul class="nav">
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">สินค้า</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">คลังสินค้า/สาขา</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">สินค้าหลากคุณสมบัติ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">หมวดหมู่</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <a data-toggle="collapse" href="#customer" class="collapsed" aria-expanded="false">
+                    <i class="material-icons">assignment_ind</i>
+                    <p>ลูกค้า / คู่ค้า <b class="caret"></b></p>
+                </a>
+                <div class="collapse" id="customer" aria-expanded="false" style="height: 0px;">
+                    <ul class="nav">
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">ลูกค้า / คู่ค้า</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">กลุ่มลูกค้า</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">ตัวแทนจำหน่าย</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">หน้าสั่งซื้อ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <a data-toggle="collapse" href="#money" class="collapsed" aria-expanded="false">
+                    <i class="material-icons">account_balance_wallet</i>
+                    <p>การเงิน <b class="caret"></b></p>
+                </a>
+                <div class="collapse" id="money" aria-expanded="false" style="height: 0px;">
+                    <ul class="nav">
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">ดูภาพรวม</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">กระเป๋าเงิน</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">รายได้อื่น</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">รายจ่ายอื่น</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">รายการโอนเงิน</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <a data-toggle="collapse" href="#settings" class="collapsed" aria-expanded="false">
+                    <i class="material-icons">settings</i>
+                    <p>ตั้งค่า <b class="caret"></b></p>
+                </a>
+                <div class="collapse" id="settings" aria-expanded="false" style="height: 0px;">
+                    <ul class="nav">
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">ข้อมูลส่วนตัว</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">บริษัท / ร้านค้า</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">ผู้ใช้งาน</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">สิทธิ์การใช้งาน</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="dashboard">
+                                <span class="sidebar-normal">เชื่อมต่อบริการอื่น</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <a [routerLink]="dashboard">
+                    <i class="material-icons">dashboard</i>
+                    <p>แพ็คเกจ</p>
+                </a>
+            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </ul>
     </div>
 </div>
