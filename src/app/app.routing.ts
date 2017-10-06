@@ -14,12 +14,14 @@ import { UpgradeComponent } from './upgrade/upgrade.component';
 import { SalesComponent } from 'app/sales/sales.component';
 import { PurchaseOrderComponent } from 'app/purchase-order/purchase-order.component';
 import { ProductComponent } from 'app/product/product.component';
+import { CustomerComponent } from 'app/customer/customer.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'sales', component: SalesComponent },
   { path: 'purchase-order', component: PurchaseOrderComponent },
   { path: 'product', component: ProductComponent },
+  { path: 'customer', component: CustomerComponent },
   { path: 'user-profile', component: UserProfileComponent },
   { path: 'table-list', component: TableListComponent },
   { path: 'typography', component: TypographyComponent },

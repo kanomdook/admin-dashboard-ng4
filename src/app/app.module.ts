@@ -20,6 +20,7 @@ import { UpgradeComponent } from './upgrade/upgrade.component';
 import { SalesComponent } from './sales/sales.component';
 import { PurchaseOrderComponent } from './purchase-order/purchase-order.component';
 import { ProductComponent } from './product/product.component';
+import { CustomerComponent } from './customer/customer.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ProductComponent } from './product/product.component';
     SalesComponent,
     PurchaseOrderComponent,
     ProductComponent,
+    CustomerComponent,
 
   ],
   imports: [

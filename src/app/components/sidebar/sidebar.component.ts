@@ -12,6 +12,7 @@ export const ROUTES: RouteInfo[] = [
     { path: 'sales', title: 'ยอดขาย',  icon: '', class: '' },
     { path: 'purchase-order', title: 'ยอดซื้อ',  icon: '', class: '' },
     { path: 'product', title: 'สินค้า',  icon: '', class: '' },
+    { path: 'customer', title: 'ลูกค้า',  icon: '', class: '' },
     
     // { path: 'user-profile', title: 'รายการขาย',  icon: 'unarchive', class: '' },
     // { path: 'typography', title: 'สินค้า',  icon: 'inbox', class: '' },
