@@ -15,6 +15,8 @@ import { SalesComponent } from 'app/sales/sales.component';
 import { PurchaseOrderComponent } from 'app/purchase-order/purchase-order.component';
 import { ProductComponent } from 'app/product/product.component';
 import { CustomerComponent } from 'app/customer/customer.component';
+import { ManageFileComponent } from 'app/manage-file/manage-file.component';
+import { ManageDocumentComponent } from 'app/manage-document/manage-document.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -22,6 +24,8 @@ const routes: Routes = [
   { path: 'purchase-order', component: PurchaseOrderComponent },
   { path: 'product', component: ProductComponent },
   { path: 'customer', component: CustomerComponent },
+  { path: 'manage-file', component: ManageFileComponent },
+  { path: 'manage-document', component: ManageDocumentComponent },
   { path: 'user-profile', component: UserProfileComponent },
   { path: 'table-list', component: TableListComponent },
   { path: 'typography', component: TypographyComponent },

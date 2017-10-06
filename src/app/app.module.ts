@@ -21,6 +21,8 @@ import { SalesComponent } from './sales/sales.component';
 import { PurchaseOrderComponent } from './purchase-order/purchase-order.component';
 import { ProductComponent } from './product/product.component';
 import { CustomerComponent } from './customer/customer.component';
+import { ManageFileComponent } from './manage-file/manage-file.component';
+import { ManageDocumentComponent } from './manage-document/manage-document.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { CustomerComponent } from './customer/customer.component';
     PurchaseOrderComponent,
     ProductComponent,
     CustomerComponent,
+    ManageFileComponent,
+    ManageDocumentComponent,
 
   ],
   imports: [
