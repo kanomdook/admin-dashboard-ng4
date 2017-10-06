@@ -15,6 +15,7 @@ export const ROUTES: RouteInfo[] = [
     { path: 'customer', title: 'ลูกค้า',  icon: '', class: '' },
     { path: 'manage-file', title: 'จัดการไฟล์',  icon: '', class: '' },
     { path: 'manage-document', title: 'จัดการเอกสาร',  icon: '', class: '' },
+    { path: 'create-sell', title: 'สร้างรายการขาย',  icon: '', class: '' },
     
     // { path: 'user-profile', title: 'รายการขาย',  icon: 'unarchive', class: '' },
     // { path: 'typography', title: 'สินค้า',  icon: 'inbox', class: '' },

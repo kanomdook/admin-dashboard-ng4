@@ -17,6 +17,7 @@ import { ProductComponent } from 'app/product/product.component';
 import { CustomerComponent } from 'app/customer/customer.component';
 import { ManageFileComponent } from 'app/manage-file/manage-file.component';
 import { ManageDocumentComponent } from 'app/manage-document/manage-document.component';
+import { CreateSellComponent } from 'app/create-sell/create-sell.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'customer', component: CustomerComponent },
   { path: 'manage-file', component: ManageFileComponent },
   { path: 'manage-document', component: ManageDocumentComponent },
+  { path: 'create-sell', component: CreateSellComponent },
   { path: 'user-profile', component: UserProfileComponent },
   { path: 'table-list', component: TableListComponent },
   { path: 'typography', component: TypographyComponent },

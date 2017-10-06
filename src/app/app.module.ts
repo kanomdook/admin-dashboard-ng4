@@ -23,6 +23,7 @@ import { ProductComponent } from './product/product.component';
 import { CustomerComponent } from './customer/customer.component';
 import { ManageFileComponent } from './manage-file/manage-file.component';
 import { ManageDocumentComponent } from './manage-document/manage-document.component';
+import { CreateSellComponent } from './create-sell/create-sell.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { ManageDocumentComponent } from './manage-document/manage-document.compo
     CustomerComponent,
     ManageFileComponent,
     ManageDocumentComponent,
+    CreateSellComponent,
 
   ],
   imports: [
