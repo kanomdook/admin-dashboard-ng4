@@ -24,6 +24,7 @@ import { CustomerComponent } from './customer/customer.component';
 import { ManageFileComponent } from './manage-file/manage-file.component';
 import { ManageDocumentComponent } from './manage-document/manage-document.component';
 import { CreateSellComponent } from './create-sell/create-sell.component';
+import { DashboardService } from 'app/dashboard/dashboard.service';
 
 @NgModule({
   declarations: [
@@ -50,10 +51,12 @@ import { CreateSellComponent } from './create-sell/create-sell.component';
     FormsModule,
     HttpModule,
     ComponentsModule,
-RouterModule,
+    RouterModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    DashboardService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
