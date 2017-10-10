@@ -43,7 +43,7 @@
                     </div>
                     <div class="card-content">
                         <p class="category">ยอดขายรวมทั้งปี</p>
-                        <h3 class="title">฿{{dataDashboard.tptalYearSales | number}}</h3>
+                        <h3 class="title">฿{{dataDashboard.totalYearSales | number}}</h3>
                     </div>
                     <!-- <div class="card-footer">
                                 <div class="stats">
@@ -81,7 +81,7 @@
                         <h4 class="title">ยอดขายรวม</h4>
                         <p class="category">
                             <span class="text-success">
-                                <i class="fa fa-long-arrow-up"></i> 45% </span> เพิ่มขึ้นจากเมื่อวาน</p>
+                                <i class="fa fa-long-arrow-up"></i> {{dataDashboard?.totalSelesGraph?.grow | number}}% </span> เพิ่มขึ้นจากเมื่อวาน</p>
                     </div>
                     <!-- <div class="card-footer">
                                 <div class="stats">
@@ -118,7 +118,7 @@
                         <h4 class="title">มูลค่าสินค้าคงเหลือรายคลัง</h4>
                         <p class="category">
                             <span class="text-success">
-                                <i class="fa fa-long-arrow-up"></i> 10% </span> เพิ่มขึ้นจากเมื่อวาน</p>
+                                <i class="fa fa-long-arrow-up"></i> {{dataDashboard?.inventoryValueGraph?.grow | number}}% </span> เพิ่มขึ้นจากเมื่อวาน</p>
 
                     </div>
                     <!-- <div class="card-footer">
@@ -151,52 +151,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>ชุดเดรสสั้น คอกลม แขนบาน ลายขวาง ทรงใส่สบาย (สีดำ)</td>
-                                    <td class="text-center">2</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-danger text-center">1</td>
-                                    <td class="text-center">1</td>
+                                <tr *ngFor="let item of dataDashboard.productMovement; let i = index">
+                                    <td>{{i + 1}}</td>
+                                    <td>{{item.name}}</td>
+                                    <td class="text-center">{{item.in}}</td>
+                                    <td class="text-center">{{item.out}}</td>
+                                    <td class="text-danger text-center">{{item.change}}</td>
+                                    <td class="text-center">{{item.stock}}</td>
                                 </tr>
-
-                                <tr>
-                                    <td>2</td>
-                                    <td>KK เดรสสั้น แขน 3 ส่วน ลายริ้ว (สีดำ) รุ่น 8801</td>
-                                    <td class="text-center">8</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-danger text-center">1</td>
-                                    <td class="text-center">7</td>
-                                </tr>
-
-                                <tr>
-                                    <td>3</td>
-                                    <td>KK ชุดเดรสสั้นน่ารัก สีดำตัดขาว รุ่น LW100</td>
-                                    <td class="text-center">7</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-danger text-center">1</td>
-                                    <td class="text-center">6</td>
-                                </tr>
-
-                                <tr>
-                                    <td>4</td>
-                                    <td>Korea ชุดเดรสแฟชั่น ทรงหรูน่ารัก แขนระบาย(สีดำ) รุ่น 5309</td>
-                                    <td class="text-center">5</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-danger text-center">1</td>
-                                    <td class="text-center">4</td>
-                                </tr>
-
-                                <tr>
-                                    <td>5</td>
-                                    <td>Charming ชุดเดรสดำชายระบาย ผ้ายืดเนื้อดีไม่ต้องรีด รุ่น D108</td>
-                                    <td class="text-center">30</td>
-                                    <td class="text-center">1</td>
-                                    <td class="text-danger text-center">1</td>
-                                    <td class="text-center">29</td>
-                                </tr>
-
-
                             </tbody>
                         </table>
 
